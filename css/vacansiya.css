@@ -1,0 +1,159 @@
+body{
+	color: #202020;
+}
+
+body, button, textarea, input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+button, textarea, input {
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+button {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pager{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.main{
+	display: flex;
+	margin: 50px 15px;
+}
+
+.main-img{
+	width: 40%;
+}
+
+.main__content{
+	width: 60%;
+	padding: 10px 20px;
+}
+
+.main__content-title {
+    font-size: 36px;
+    line-height: 40px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.main__content-title:after {
+	top: 0;
+	left: 0;
+	width: 5px;
+	height: 100%;
+}
+
+.main__content-subtitle{
+	font-size: 26px;
+	line-height: 30px;
+	padding-left: 15px;
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+.main__content__desc{
+	padding-top: 20px;
+	border-top: 1px solid #e3e3e3;
+}
+
+.content__desc_block{
+	display: flex;
+	margin-bottom: 15px;
+	line-height: 20px;
+	color: #202020;
+	justify-content: space-between;
+}
+
+.content__desc_block-categories{
+	color: #85888B;
+}
+
+.content__desc_block-description{
+	width: 70%;
+}
+
+.content__desc_block-description a{
+	color: #202020;
+}
+
+@media screen and (max-width: 1000px){
+
+	.content__desc_block{
+		font-size: 14px;
+    	line-height: 16px;
+	}
+
+	.main__content-subtitle{
+		margin-bottom: 25px;
+	}
+
+}
+
+@media screen and (max-width: 800px){
+
+	.main {
+	    flex-direction: column;
+	}
+
+	.main-img {
+	    width: 100%;
+	}
+
+	.main__content {
+	    width: 100%;
+	    margin-top: 20px;
+	}
+
+}
+
+@media screen and (max-width: 700px){
+
+	.content__desc_block{
+		margin-right: 20px;
+	}
+
+}
+
+@media screen and (max-width: 500px){
+
+	.content__desc_block {
+	    font-size: 13px;
+	    line-height: 15px;
+	}
+
+	.main__content-title {
+	    font-size: 28px;
+	    line-height: 31px;
+	    padding-left: 15px;
+	    margin-bottom: 15px;
+	}
+
+	.main__content-subtitle {
+	    font-size: 21px;
+	    line-height: 26px;
+	}
+
+}
+
+@media screen and (max-width: 450px){
+
+	.content__desc_block {
+	    font-size: 11px;
+	    line-height: 14px;
+	}
+
+	.content__desc_block-description {
+	    width: 67%;
+	}
+
+}
